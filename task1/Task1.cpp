@@ -12,11 +12,11 @@ float task1_2(float x, float y) {
 double task1_10(int x, int y) {
     return sqrt(cos(exp(sqrt(y + x)) /
                     pow(sin(sqrt(x * x - y * y)), 2)));// соблюдая порядок выполнения операций вернем нужное значение. Заметим что так как значение косинуса
-                    //стоит может быть отрицательным и при этом оно стоит под корнем. Возможен ответ nan
+                    //может быть отрицательным и при этом оно стоит под корнем. Возможен ответ nan
 }
 
 
-std::vector<int> helper(int x) { // вспомогательная функция для нахождения цифр
+std::vector<int> helper(int x) { // вспомогательная функция для нахождения цифр 3значного числа
     std::vector<int> arr(3); // реализуем вектор состоящий из трех int значений
     arr[0] = x % 10; //находим разряд единицы
     arr[1] = x / 10 % 10; // находим разряд десятка
@@ -38,8 +38,7 @@ std::vector<int> task1_14(int x) {
 
 
 int task1_16(int x) {
-    std::vector<int> numbers = helper(
-            x); // находим цифры числа, где numbers[2] - это первая цифра, numbers[1] - вторая, numbers[0] - третья
+    std::vector<int> numbers = helper(x); // находим цифры числа, где numbers[2] - это первая цифра, numbers[1] - вторая, numbers[0] - третья
     int FirstNum = (numbers[1] + numbers[0]) % 10; //формируем превую цифру y
     int SecondNum = abs(numbers[2] - numbers[0]);  //формируем вторую цифру y
     int ThirdNum = numbers[1] % numbers[2]; //формируем третью цифру y
@@ -88,6 +87,7 @@ int main() {
         };
         default: {
             std::cout << "Wrong number of task!";
+            break;
         };
     }
     return 0;
