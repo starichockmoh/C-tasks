@@ -39,7 +39,7 @@ std::string taskBit_5(int n) {
 }
 
 int main () {
-    std::cout << "Choose task (1-4)" << std::endl; // реализуем выбор задачи
+    std::cout << "Choose task (1-5)" << std::endl; // реализуем выбор задачи
     int task;
     std::cin >> task; //выбираем задачу с ввода
     switch (task) { // смотрим какую задачу выбрали
