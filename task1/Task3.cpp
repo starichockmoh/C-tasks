@@ -148,7 +148,6 @@ void task18() {
         }
         std::cout << x << " "; // Выводим x
         std::cout << y; // Выводим y
-
     }
 }
 
