@@ -6,7 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/anyan/Documents/Programms/C++ Projects/C-tasks/task1/Task5.cpp
+C:/Users/anyan/Documents/Programms/C++ Projects/C-tasks/task1/Task6.cpp
 iostream
+-
+cmath
+-
+vector
+-
+time.h
 -
 
