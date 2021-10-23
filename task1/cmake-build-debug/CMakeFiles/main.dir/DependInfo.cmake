@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/anyan/Documents/Programms/C++ Projects/C-tasks/task1/Task6.cpp" "C:/Users/anyan/Documents/Programms/C++ Projects/C-tasks/task1/cmake-build-debug/CMakeFiles/main.dir/Task6.cpp.obj"
+  "C:/Users/anyan/Documents/Programms/C++ Projects/C-tasks/task1/Task7.cpp" "C:/Users/anyan/Documents/Programms/C++ Projects/C-tasks/task1/cmake-build-debug/CMakeFiles/main.dir/Task7.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
