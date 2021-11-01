@@ -128,29 +128,29 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-Task7.obj: Task7.cpp.obj
-.PHONY : Task7.obj
+Task8.obj: Task8.cpp.obj
+.PHONY : Task8.obj
 
 # target to build an object file
-Task7.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Task7.cpp.obj
-.PHONY : Task7.cpp.obj
+Task8.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Task8.cpp.obj
+.PHONY : Task8.cpp.obj
 
-Task7.i: Task7.cpp.i
-.PHONY : Task7.i
+Task8.i: Task8.cpp.i
+.PHONY : Task8.i
 
 # target to preprocess a source file
-Task7.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Task7.cpp.i
-.PHONY : Task7.cpp.i
+Task8.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Task8.cpp.i
+.PHONY : Task8.cpp.i
 
-Task7.s: Task7.cpp.s
-.PHONY : Task7.s
+Task8.s: Task8.cpp.s
+.PHONY : Task8.s
 
 # target to generate assembly for a file
-Task7.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Task7.cpp.s
-.PHONY : Task7.cpp.s
+Task8.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Task8.cpp.s
+.PHONY : Task8.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... main
-	@echo ... Task7.obj
-	@echo ... Task7.i
-	@echo ... Task7.s
+	@echo ... Task8.obj
+	@echo ... Task8.i
+	@echo ... Task8.s
 .PHONY : help
 
 
