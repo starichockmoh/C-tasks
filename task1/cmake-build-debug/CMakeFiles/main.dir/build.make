@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -65,27 +65,27 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
-CMakeFiles/main.dir/Task8.cpp.obj: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/Task8.cpp.obj: ../Task8.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\anyan\Documents\Programms\C++ Projects\C-tasks\task1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/Task8.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\main.dir\Task8.cpp.obj -c "C:\Users\anyan\Documents\Programms\C++ Projects\C-tasks\task1\Task8.cpp"
+CMakeFiles/main.dir/Task9.cpp.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/Task9.cpp.obj: ../Task9.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\anyan\Documents\Programms\C++ Projects\C-tasks\task1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/Task9.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\main.dir\Task9.cpp.obj -c "C:\Users\anyan\Documents\Programms\C++ Projects\C-tasks\task1\Task9.cpp"
 
-CMakeFiles/main.dir/Task8.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/Task8.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\anyan\Documents\Programms\C++ Projects\C-tasks\task1\Task8.cpp" > CMakeFiles\main.dir\Task8.cpp.i
+CMakeFiles/main.dir/Task9.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/Task9.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\anyan\Documents\Programms\C++ Projects\C-tasks\task1\Task9.cpp" > CMakeFiles\main.dir\Task9.cpp.i
 
-CMakeFiles/main.dir/Task8.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Task8.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\anyan\Documents\Programms\C++ Projects\C-tasks\task1\Task8.cpp" -o CMakeFiles\main.dir\Task8.cpp.s
+CMakeFiles/main.dir/Task9.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Task9.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\anyan\Documents\Programms\C++ Projects\C-tasks\task1\Task9.cpp" -o CMakeFiles\main.dir\Task9.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/Task8.cpp.obj"
+"CMakeFiles/main.dir/Task9.cpp.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-main.exe: CMakeFiles/main.dir/Task8.cpp.obj
+main.exe: CMakeFiles/main.dir/Task9.cpp.obj
 main.exe: CMakeFiles/main.dir/build.make
 main.exe: CMakeFiles/main.dir/linklibs.rsp
 main.exe: CMakeFiles/main.dir/objects1.rsp

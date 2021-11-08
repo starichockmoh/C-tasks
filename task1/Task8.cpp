@@ -22,9 +22,9 @@ void PrintArray(std::vector<int> Array) {//вспомогательная фун
 
 
 void task1(int n) {
-    std::vector<int> Array = CreateArray(n);//создаем массив длиной n
-    std::vector<int> Der(n - 1); //будущий массив с производной
-    for (int i = 0; i < n - 1; ++i) {
+    std::vector<int> Array = CreateArray(n+1);//создаем массив длиной n+1
+    std::vector<int> Der(n); //будущий массив с производной
+    for (int i = 0; i < n; ++i) {
         Der[i] = Array[i + 1] * (i + 1); //формируем производную по правилу (x^n)` = nx^n-1
     }
     PrintArray(Der);
@@ -32,12 +32,12 @@ void task1(int n) {
 
 
 void task6(int n, int A) {
-    std::vector<int> Array = CreateArray(n);//создаем массив длиной n
-    std::vector<int> Pr(n + 2);//будущий массив произведения
-    for (int i = 0; i < n + 2; ++i) {//перемножаем элементы
+    std::vector<int> Array = CreateArray(n+1);//создаем массив длиной n+1
+    std::vector<int> Pr(n + 3);//будущий массив произведения
+    for (int i = 0; i < n + 3; ++i) {//перемножаем элементы
         if (i == 0 || i == 1) {
             Pr[i] = Array[i] * (-A);//для степени 0 и 1, просто умножаем коэф на -A
-        } else if (i < n) {
+        } else if (i < n+1) {
             Pr[i] = Array[i] * (-A) + Array[i - 2];//умножаем коэф на -A и еще прибавляем коэф при числе со степенью на 2 меньше (т к оно при умножении
             //на x^2 даст число в i степени
         } else {
@@ -68,7 +68,7 @@ int main() {
     switch (task) { // смотрим какую задачу выбрали
         case 1: { //первая задача (номер 2 в пдф)
             std::cout << "1 task " << std::endl;
-            std::cout << "Input array length" << std::endl;
+            std::cout << "Input n" << std::endl;
             int n;
             std::cin >> n; //Вводим два значения
             task1(n); //выполняем задачу
@@ -76,7 +76,7 @@ int main() {
         };
         case 2: { // аналогично с остальными задачами
             std::cout << "2 task " << std::endl;
-            std::cout << "Input array length" << std::endl;
+            std::cout << "Input n" << std::endl;
             int n;
             std::cin >> n; //Вводим два значения
             std::cout << "Input A" << std::endl;
