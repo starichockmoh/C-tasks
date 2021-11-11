@@ -6,14 +6,12 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/anyan/Documents/Programms/C++ Projects/C-tasks/task1/Task9.cpp
+C:/Users/anyan/Documents/Programms/C++ Projects/C-tasks/task1/Task10.cpp
 iostream
 -
 vector
 -
 time.h
--
-cmath
 -
 algorithm
 -

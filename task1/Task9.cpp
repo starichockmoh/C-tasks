@@ -5,15 +5,16 @@
 #include <algorithm>
 
 
-std::vector<int> CreateArray(int n){ //вспомогательная функция для создания массива
-    srand((unsigned int) time(0));
-    std::vector<int> Arr(n);
+
+std::vector<int> CreateArray(int n) {//вспомогательная функция для создания массива
+    std::vector<int> Array(n);
+    std::cout << "Input array`s elements" << std::endl;
     for (int i = 0; i < n; ++i) {
-        Arr[i] = rand() % 100 * pow(-1, rand() % 10);
-        std::cout << Arr[i] << " ";
+        int tmp;
+        std::cin >> tmp;
+        Array[i] = tmp;
     }
-    std::cout << std::endl;
-    return Arr;
+    return Array;
 }
 
 
@@ -46,7 +47,9 @@ bool task6(int n, int x) {
 void task15(int n, int x){
     std::vector<int> a (2*n);//удваиваем кол-во элементов для запаса для сдвигов
     for (int i = 0; i < n; ++i) {
-        a[i] = rand() % 10;//формируем массив
+        int tmp;
+        std::cin >> tmp;
+        a[i] = tmp;
         std::cout << a[i] << " ";
         if (a[i] == x) {
             for (int k = n; k > i; k--)//при условии делаем сдвиг элементов от i+1 до n вправо на один
@@ -65,7 +68,9 @@ void task15(int n, int x){
 void task19(int n, int x, int y){
     std::vector<int> a (2*n);
     for (int i = 0; i < n; ++i) {
-        a[i] = rand() % 10;
+        int tmp;
+        std::cin >> tmp;
+        a[i] = tmp;
         std::cout << a[i] << " ";
         if (a[i] == x) {
             for (int k = n; k > i; k--)
@@ -76,7 +81,7 @@ void task19(int n, int x, int y){
         }
     }
     std::cout << std::endl;
-    for (int i = 0; i <= n; ++i) {
+    for (int i = 0; i < n; ++i) {
         std::cout << a[i] << " ";
     }
 }
