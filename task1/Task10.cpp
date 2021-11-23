@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector> //библиотека позволяющая нам пользоваться динамическим массивом - вектором
-#include <time.h>
 #include <algorithm>
 
 std::vector<std::vector<int>> CreateDoubleArray(int n, int n_2) {//вспомогательная функция для создания двумерного массива
@@ -132,6 +131,8 @@ void task12 (int n) {
     }
 
 }
+
+
 void task17 (int n) {
     int start_n = n;// сохраняем стартовый размер массива
     std::vector Arr = CreateDoubleArray(n,2);//создаем массив
@@ -162,8 +163,6 @@ void task17 (int n) {
         std::cout << std::endl;
     }
 }
-
-
 
 
 int main() {
