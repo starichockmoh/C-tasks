@@ -128,29 +128,29 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-Task11.obj: Task11.cpp.obj
-.PHONY : Task11.obj
+Task12.obj: Task12.cpp.obj
+.PHONY : Task12.obj
 
 # target to build an object file
-Task11.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Task11.cpp.obj
-.PHONY : Task11.cpp.obj
+Task12.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Task12.cpp.obj
+.PHONY : Task12.cpp.obj
 
-Task11.i: Task11.cpp.i
-.PHONY : Task11.i
+Task12.i: Task12.cpp.i
+.PHONY : Task12.i
 
 # target to preprocess a source file
-Task11.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Task11.cpp.i
-.PHONY : Task11.cpp.i
+Task12.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Task12.cpp.i
+.PHONY : Task12.cpp.i
 
-Task11.s: Task11.cpp.s
-.PHONY : Task11.s
+Task12.s: Task12.cpp.s
+.PHONY : Task12.s
 
 # target to generate assembly for a file
-Task11.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Task11.cpp.s
-.PHONY : Task11.cpp.s
+Task12.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Task12.cpp.s
+.PHONY : Task12.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... main
-	@echo ... Task11.obj
-	@echo ... Task11.i
-	@echo ... Task11.s
+	@echo ... Task12.obj
+	@echo ... Task12.i
+	@echo ... Task12.s
 .PHONY : help
 
 

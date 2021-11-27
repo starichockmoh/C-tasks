@@ -46,8 +46,8 @@ void task16(int n, int constN) {//функция для первой полов�
 }
 
 void task16dop(int n, int constN) {//для второй половины
-    if (n <= 0) return;
-    for (int i = 1; i <= constN; ++i) {//условие окончания рекурсии
+    if (n <= 0) return;//условие окончания рекурсии
+    for (int i = 1; i <= constN; ++i) {
         if ((i <= (constN - n) / 2) || (i > (constN - n) / 2 + n)) std::cout << " ";
         else std::cout << n;
     }
