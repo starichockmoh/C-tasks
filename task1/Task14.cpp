@@ -5,18 +5,18 @@
 #include <cmath>
 
 
-struct Hotel {
+struct Hotel {//структура отель с ФИО, датой и количеством дней пребывания
     std::string FirstName, LastName, Patron, Date;
     int Days;
     bool IsHere;
 };
 
 
-struct Point {
+struct Point {//структура точки с координатами
     int x,y;
 };
 
-struct Fraction {
+struct Fraction {//структура дроби с числителем и знаменателем
     int num, den;
 };
 
@@ -47,31 +47,31 @@ int SumDays(std::string Date) {
     }
     Days += (year-1)*365;
     return Days;
-}
+} // функция для получения количества дней от даты
 
 
 void task1(int n, std::string NewDate) {
     std::regex rx{
-            R"((0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.]\d\d\d\d)"};//регулярное выражение для проверки даты
-    std::vector<Hotel> Hotels(n);
-    int NewDate_days = SumDays(NewDate);
-    for (int i = 0; i < n; ++i) {
+            R"((0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.]\d\d\d\d)"};  //регулярное выражение для проверки даты
+    std::vector<Hotel> Hotels(n);                            //массив отелей
+    int NewDate_days = SumDays(NewDate);   //кол-во дней в введеной дате
+    for (int i = 0; i < n; ++i) { // циклом прописываем всех постояльцев
         Hotel tmp;
         std::cout << "FLP: " << std::endl;
         std::cin >> tmp.FirstName >> tmp.LastName >> tmp.Patron;
         std::cout << "Date (dd.mm.yyyy): " << std::endl;;
         std::cin >> tmp.Date;
-        while (!std::regex_match(tmp.Date, rx)) {
+        while (!std::regex_match(tmp.Date, rx)) { //валидация введенной даты
             std::cout << "Incorrect date! " << std::endl;
             std::cout << "Date (dd.mm.yyyy): " << std::endl;
             std::cin >> tmp.Date;
         }
         std::cout << "Days: " << std::endl;;
         std::cin >> tmp.Days;
-        tmp.IsHere = SumDays(tmp.Date) + tmp.Days >= NewDate_days;
+        tmp.IsHere = SumDays(tmp.Date) + tmp.Days >= NewDate_days; // вычисление дней и проверка
         Hotels[i] = tmp;
     }
-    for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < n; ++i) {//вывод на экран людей
         std::cout << i + 1 << " Client" << std::endl;
         std::cout << Hotels[i].FirstName << " " << Hotels[i].LastName << " " << Hotels[i].Patron << std::endl;
         std::cout << Hotels[i].Date << std::endl;
@@ -79,12 +79,11 @@ void task1(int n, std::string NewDate) {
         Hotels[i].IsHere ? std::cout << "will be in hotel in " << NewDate << std::endl : std::cout << "will not be" << std::endl;
     }
 
-
 }
 
 
 void task2(int n) {
-    std::vector<Point> Points(n);
+    std::vector<Point> Points(n); //создаем массив точек с координатами
     for (int i = 0; i < n; ++i) {
         Point tmp;
         std::cout << "x,y:" << std::endl;
@@ -92,95 +91,98 @@ void task2(int n) {
         Points[i] = tmp;
     }
     std::cout << std::endl;
-    for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < n; ++i) { //выведем их на экран
         std::cout << i+1 << " Point" <<std::endl;
         std::cout << "(" << Points[i].x << ", " << Points[i].y << ")" << std::endl;
     }
-    double MaxSum = 0;
-    Point MaxPoint;
-    for (int i = 0; i < n; ++i) {
+    double MaxSum = 0; //макс сумма расстояний
+    Point MaxPoint;  //точка с макс суммой
+    for (int i = 0; i < n; ++i) { //цикл по всем точкам
         double TmpSum = 0;
         for (int j = 0; j < n; ++j) {
-            int deltaX = (Points[i].x - Points[j].x) * (Points[i].x - Points[j].x);
-            int deltaY = (Points[i].y - Points[j].y) * (Points[i].y - Points[j].y);
-            TmpSum += sqrt(deltaX + deltaY);
+            int deltaX = (Points[i].x - Points[j].x) * (Points[i].x - Points[j].x); //(x1-x2)^2
+            int deltaY = (Points[i].y - Points[j].y) * (Points[i].y - Points[j].y); //(y1-y2)^2
+            TmpSum += sqrt(deltaX + deltaY); // корень из квадратов координат это и есть расстояние между точками
         }
         if (TmpSum >= MaxSum) {
             MaxSum = TmpSum;
             MaxPoint = Points[i];
         }
     }
-    std::cout << MaxSum << std::endl;
-    std::cout << "Max: " << "(" << MaxPoint.x << ", " << MaxPoint.y << ")" << std::endl;
+    std::cout << MaxSum << std::endl; //выведем макс сумму
+    std::cout << "Max: " << "(" << MaxPoint.x << ", " << MaxPoint.y << ")" << std::endl; //выведем макс точку
 }
 
-Fraction InputFraction () {
+Fraction InputFraction () { //функция для ввода дроби
     Fraction tmp{};
     std::cout << "Input fraction" << std::endl;
     std::string str;
     std::getline(std::cin, str,'/');
-    tmp.num = std::stoi(str);
+    tmp.num = std::stoi(str); //то что до дроби записываем в числитель
     std::getline(std::cin, str);
-    tmp.den = std::stoi(str);
+    tmp.den = std::stoi(str); // после дроби в знаменатель
     return tmp;
 }
 
-void OutputCommonFraction (Fraction Frac) {
+void OutputCommonFraction (Fraction Frac) { //функция для вывода дроби
     std::cout << Frac.num << "/" << Frac.den << std::endl;
+//    std::cout << Frac.num << std::endl;
+//    std::cout << "-" << std::endl;
+//    std::cout << Frac.den << std::endl;
 }
 
-void ToGoodFrac (Fraction Frac) {
+void ToGoodFrac (Fraction Frac) { //функция для создания правильной дроби
     if (Frac.num < Frac.den) {
-        OutputCommonFraction(Frac);
+        OutputCommonFraction(Frac); //если числитель меньше или равен знаменателю то это уже правильная дробь
     } else if (Frac.num == Frac.den) {
         std::cout << Frac.num;
     } else {
-        int IntTmp = Frac.num / Frac.den;
-        int OstTmp = Frac.num % Frac.den;
+        int IntTmp = Frac.num / Frac.den; //находим целое
+        int OstTmp = Frac.num % Frac.den; // находим остаток, который пойдет в числитель
         std::cout << IntTmp << " " << OstTmp << "/" << Frac.den << std::endl;
     }
 }
 
-Fraction Reduction (Fraction Frac) {
+Fraction Reduction (Fraction Frac) { // функция для сокращения дроби
     Fraction c{};
     int a = Frac.num;
     int b = Frac.den;
-    while (a > 0 && b > 0) {
+    while (a > 0 && b > 0) { // реализация поиска НОДа
         if (a > b)
             a %= b;
         else
             b %= a;
     }
-    c.num = Frac.num / (a+b);
+    c.num = Frac.num / (a+b); // сокращаем числитель и знаменааетль на НОД
     c.den = Frac.den / (a+b);
     return c;
 }
 
-Fraction operator + (Fraction a, Fraction b) {
+Fraction operator + (Fraction a, Fraction b) { //функция сложения
     Fraction c{};
-    c.num = b.den * a.num + a.den * b.num;
-    c.den = a.den*b.den;
-    return c;
-} //оп
-
-Fraction operator - (Fraction a, Fraction b) {
-    Fraction c{};
-    c.num = b.den * a.num - a.den * b.num;
-    c.den = a.den*b.den;
+    c.num = b.den * a.num + a.den * b.num;//находим числитель
+    c.den = a.den*b.den;//общий знаменатель
     return c;
 }
 
-Fraction operator * (Fraction a, Fraction b) {
+Fraction operator - (Fraction a, Fraction b) { //фукнция вычитания
     Fraction c{};
-    c.num = a.num * b.num;
-    c.den = a.den * b.den;
+    c.num = b.den * a.num - a.den * b.num; //находим числитель
+    c.den = a.den*b.den;  //общий знаменатель
     return c;
 }
 
-Fraction operator / (Fraction a, Fraction b) {
+Fraction operator * (Fraction a, Fraction b) { //функция умножения
     Fraction c{};
-    c.num = a.num * b.den;
-    c.den = a.den * b.num;
+    c.num = a.num * b.num; // перемножаем числители
+    c.den = a.den * b.den; // перемножаем знаменатели
+    return c;
+}
+
+Fraction operator / (Fraction a, Fraction b) { //фукнция деления
+    Fraction c{};
+    c.num = a.num * b.den;// перемножаем числители для перевернутой второй дроби
+    c.den = a.den * b.num;// перемножаем знаменатели для перевернутой второй дроби
     return c;
 }
 
@@ -192,7 +194,7 @@ void task3() {
     std::cin >> NumOfOperation;
     Fraction FracA{};
     Fraction FracB{};
-    switch (NumOfOperation) {
+    switch (NumOfOperation) {//осуществляем выбор операции
         case 1: {
             FracA = InputFraction();
             OutputCommonFraction(FracA);
@@ -229,11 +231,12 @@ void task3() {
             OutputCommonFraction(Reduction(FracA));
         }
         case 7: {
-            std::cout << "Conversion to decimal" <<std::endl;
+            std::cout << "Conversion to decimal" <<std::endl; // привидение к десятичной дроби
             FracA = InputFraction();
-            std::cout << double(FracA.num) / FracA.den;
+            std::cout << double(FracA.num) / FracA.den << std::endl;
         }
         case 8: {
+            std::cout << "Conversion to nice frac" <<std::endl;
             FracA = InputFraction();
             ToGoodFrac(FracA);
             break;
