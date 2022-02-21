@@ -1,3 +1,0 @@
-C:/Users/anyan/Documents/Programms/C++ Projects/C-tasks/task1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/anyan/Documents/Programms/C++ Projects/C-tasks/task1/cmake-build-debug/CMakeFiles/main.dir
-C:/Users/anyan/Documents/Programms/C++ Projects/C-tasks/task1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
