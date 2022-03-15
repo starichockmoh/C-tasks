@@ -128,29 +128,29 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-second_sem/Task5.obj: second_sem/Task5.cpp.obj
-.PHONY : second_sem/Task5.obj
+second_sem/Task10_1.obj: second_sem/Task10_1.cpp.obj
+.PHONY : second_sem/Task10_1.obj
 
 # target to build an object file
-second_sem/Task5.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/second_sem/Task5.cpp.obj
-.PHONY : second_sem/Task5.cpp.obj
+second_sem/Task10_1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/second_sem/Task10_1.cpp.obj
+.PHONY : second_sem/Task10_1.cpp.obj
 
-second_sem/Task5.i: second_sem/Task5.cpp.i
-.PHONY : second_sem/Task5.i
+second_sem/Task10_1.i: second_sem/Task10_1.cpp.i
+.PHONY : second_sem/Task10_1.i
 
 # target to preprocess a source file
-second_sem/Task5.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/second_sem/Task5.cpp.i
-.PHONY : second_sem/Task5.cpp.i
+second_sem/Task10_1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/second_sem/Task10_1.cpp.i
+.PHONY : second_sem/Task10_1.cpp.i
 
-second_sem/Task5.s: second_sem/Task5.cpp.s
-.PHONY : second_sem/Task5.s
+second_sem/Task10_1.s: second_sem/Task10_1.cpp.s
+.PHONY : second_sem/Task10_1.s
 
 # target to generate assembly for a file
-second_sem/Task5.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/second_sem/Task5.cpp.s
-.PHONY : second_sem/Task5.cpp.s
+second_sem/Task10_1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/second_sem/Task10_1.cpp.s
+.PHONY : second_sem/Task10_1.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... main
-	@echo ... second_sem/Task5.obj
-	@echo ... second_sem/Task5.i
-	@echo ... second_sem/Task5.s
+	@echo ... second_sem/Task10_1.obj
+	@echo ... second_sem/Task10_1.i
+	@echo ... second_sem/Task10_1.s
 .PHONY : help
 
 
