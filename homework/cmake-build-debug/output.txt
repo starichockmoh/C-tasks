@@ -1,20 +1,8 @@
-Uporotov  manger                  04.02.1988  10        10000     
-Jokovic   machine                 21.10.1989  12        10000     
-Arkin     tester                  08.08.1999  3         15000     
-Kitaeva   designer                04.05.2000  2         15000     
-Kitaes    designer                04.05.2000  2         15700     
-Mulaev    developer               31.12.2001  1         23000     
-Bulaev    developer               31.12.2001  1         23000     
-Ivanova   manager                 09.11.2000  6         40000     
-Yan       backend-developer       30.06.1992  1         45000     
-Ivanov    developer               12.05.1970  3         50000     
-Petrov    qa                      23.01.1990  4         60000     
-Minaev    sisadmin                21.11.1990  11        60000     
-Ismailov  frontend-developer      23.12.1978  1         70000     
-Ismailova frontend-developer      24.12.1970  10        70500     
-Lopuhoev  devops                  30.10.1987  9         90000     
-Golicin   devops                  14.08.1987  10        90000     
-Golicina  devops                  14.08.1989  10        90000     
-Lopuhoeva devops                  30.10.1988  10        90500     
-Nikolaev  nothing                 03.03.1945  21        150000    
-Yrev      devops                  09.03.1945  30        150000    
+5
+3
+1
+2
+4
+-4
+-2
+-1

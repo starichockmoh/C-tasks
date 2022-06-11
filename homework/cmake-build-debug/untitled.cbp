@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/anyan/Documents/Programms/C++ Projects/C-tasks/homework/second sem/Task10_1.cpp">
+		<Unit filename="C:/Users/anyan/Documents/Programms/C++ Projects/C-tasks/homework/second sem/closingHashing.cpp">
 			<Option target="main"/>
 		</Unit>
 		<Unit filename="C:/Users/anyan/Documents/Programms/C++ Projects/C-tasks/homework/CMakeLists.txt">

@@ -128,29 +128,29 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-second_sem/Task10_1.obj: second_sem/Task10_1.cpp.obj
-.PHONY : second_sem/Task10_1.obj
+second_sem/closingHashing.obj: second_sem/closingHashing.cpp.obj
+.PHONY : second_sem/closingHashing.obj
 
 # target to build an object file
-second_sem/Task10_1.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/second_sem/Task10_1.cpp.obj
-.PHONY : second_sem/Task10_1.cpp.obj
+second_sem/closingHashing.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/second_sem/closingHashing.cpp.obj
+.PHONY : second_sem/closingHashing.cpp.obj
 
-second_sem/Task10_1.i: second_sem/Task10_1.cpp.i
-.PHONY : second_sem/Task10_1.i
+second_sem/closingHashing.i: second_sem/closingHashing.cpp.i
+.PHONY : second_sem/closingHashing.i
 
 # target to preprocess a source file
-second_sem/Task10_1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/second_sem/Task10_1.cpp.i
-.PHONY : second_sem/Task10_1.cpp.i
+second_sem/closingHashing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/second_sem/closingHashing.cpp.i
+.PHONY : second_sem/closingHashing.cpp.i
 
-second_sem/Task10_1.s: second_sem/Task10_1.cpp.s
-.PHONY : second_sem/Task10_1.s
+second_sem/closingHashing.s: second_sem/closingHashing.cpp.s
+.PHONY : second_sem/closingHashing.s
 
 # target to generate assembly for a file
-second_sem/Task10_1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/second_sem/Task10_1.cpp.s
-.PHONY : second_sem/Task10_1.cpp.s
+second_sem/closingHashing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/second_sem/closingHashing.cpp.s
+.PHONY : second_sem/closingHashing.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... main
-	@echo ... second_sem/Task10_1.obj
-	@echo ... second_sem/Task10_1.i
-	@echo ... second_sem/Task10_1.s
+	@echo ... second_sem/closingHashing.obj
+	@echo ... second_sem/closingHashing.i
+	@echo ... second_sem/closingHashing.s
 .PHONY : help
 
 

@@ -3,4 +3,4 @@ project(untitled)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(main "second sem/Task10_1.cpp")
+add_executable(main "second sem/closingHashing.cpp")
